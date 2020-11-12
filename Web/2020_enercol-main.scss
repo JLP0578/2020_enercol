@@ -44,12 +44,12 @@ header {
 
   #points-caravel {
     @include flex(center, wrap, row);
-    background-image: url("../../Christophe/2020_enercol-main/img/points.svg");
+    background-image: url("../img/points.svg");
     background-repeat: repeat;
   }
 
   #bckgrnd {
-    background-image: url("../../Christophe/2020_enercol-main/Photos/20161202_101925.jpg");
+    background-image: url("../Photos/20161202_101925.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
