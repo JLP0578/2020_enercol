@@ -1,0 +1,214 @@
+/***********************************/
+/*            FUNCTION             */
+/*              INIT               */
+/***********************************/
+ul, h1, h2, h3, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+@mixin flex($justify-content,$flex-wrap,$flex-direction) {
+  display: flex;
+  justify-content: $justify-content;
+  flex-wrap: $flex-wrap;
+  flex-direction: $flex-direction;
+  align-items: center;
+}
+
+@mixin colored($bkg,$col) {
+  color: $col;
+  background-color: $bkg;
+}
+
+@mixin widhei($width,$height) {
+  width: $width;
+  height: $height;
+}
+
+.Disabled-Display {
+  display: none;
+}
+
+.Enabled-Display {
+  display: block;
+}
+
+/***********************************/
+/*             DEFAULT             */
+/*            TELEPHONE            */
+/***********************************/
+/*****************/
+/* HEADER ET NAV */
+header {
+  @include colored(white, grey);
+
+  #points-caravel {
+    @include flex(center, wrap, row);
+    background-image: url("../../Christophe/2020_enercol-main/img/points.svg");
+    background-repeat: repeat;
+  }
+
+  #bckgrnd {
+    background-image: url("../../Christophe/2020_enercol-main/Photos/20161202_101925.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 180px;
+  }
+}
+
+nav {
+  @include flex(space-between, wrap, row);
+  margin: 5px 10px;
+
+}
+
+.headerLogo {
+  @include flex(center, nowrap, row);
+
+  img {
+    max-width: 100%;
+    @include widhei(auto, 40px);
+  }
+
+  #Nom-Entr1 {
+    text-transform: uppercase;
+    font-size: 1.4em;
+  }
+
+  #Nom-Entr2 {
+    text-transform: lowercase;
+    font-size: 1.2em;
+  }
+}
+
+.MenuNav {
+  .contentMenuLogo {
+    @include colored(#B3D143, white);
+  }
+}
+
+.contentMenuLogo, .contentMenu {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+#NavMenuLogo {
+  max-width: 100%;
+  @include widhei(auto, 40px);
+  padding: 3px 5px;
+
+}
+
+.contentMenu {
+  @extend .Disabled-Display;
+}
+
+/*******************/
+/* MAIN ET SECTION */
+
+.Content {
+  @include flex(flex-start, wrap, column);
+}
+
+.ContentHeadCol {
+  div {
+    @include flex(center, wrap, column);
+
+    img {
+
+      max-width: 100%;
+    }
+  }
+}
+
+.ContentHeaderRow {
+  @include flex(center, wrap, row);
+
+  img {
+    @include widhei(35%, 60px);
+  }
+
+  #logo-coop {
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      text-transform: uppercase;
+      font-size: 1.4em;
+      text-align: center;
+      @include colored(transparent, #C3A575);
+    }
+  }
+
+  #logo-install {
+    img {
+      transform: rotate(-80deg);
+      max-width: 100%;
+    }
+
+    p {
+      text-transform: uppercase;
+      font-size: 1.4em;
+      text-align: center;
+      @include colored(transparent, #B3D143);
+    }
+  }
+
+  #logo-produc {
+    img {
+      max-width: 100%;
+    }
+
+    p {
+      text-transform: uppercase;
+      font-size: 1.4em;
+      text-align: center;
+      @include colored(transparent, #FCB731);
+    }
+  }
+
+  #logo-capital {
+    img {
+      max-width: 100%;
+    }
+
+    p,b {
+      text-transform: uppercase;
+      font-size: 1.4em;
+      text-align: center;
+      @include colored(transparent, #00AFEC);
+    }
+  }
+
+}
+.taille-picto{
+  @include flex(center, nowrap, column);
+  @include widhei(35%, auto);
+  margin: 20px;
+}
+
+
+/***********************************/
+/*             TABLETTE            */
+/***********************************/
+@media screen and (min-width: 768px) {
+
+}
+
+/***********************************/
+/*             DESKTOP             */
+/***********************************/
+@media screen and (min-width: 970px) {
+
+}
+
+/***********************************/
+/*               TV                */
+/***********************************/
+@media screen and (min-width: 1370px) {
+
+
+}
