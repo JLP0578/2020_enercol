@@ -7,7 +7,7 @@ ul, h1, h2, h3, p {
   padding: 0px;
 }
 
-.Disabled-Display, .contentMenu {
+.Disabled-Display {
   display: none;
 }
 
@@ -37,12 +37,12 @@ header #points-caravel {
       flex-direction: row;
   -ms-flex-align: center;
       align-items: center;
-  background-image: url("../img/points.svg");
+  background-image: url("../../Christophe/2020_enercol-main/img/points.svg");
   background-repeat: repeat;
 }
 
 header #bckgrnd {
-  background-image: url("../Photos/20161202_101925.jpg");
+  background-image: url("../../Christophe/2020_enercol-main/Photos/20161202_101925.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -110,6 +110,10 @@ nav {
   padding: 3px 5px;
 }
 
+.contentMenu {
+  display: none;
+}
+
 /*******************/
 /* MAIN ET SECTION */
 .Content {
@@ -123,6 +127,10 @@ nav {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+}
+
+.ContentHeadCol {
+  color: #FBB730;
 }
 
 .ContentHeadCol div {
@@ -164,9 +172,8 @@ nav {
   max-width: 100%;
 }
 
-.ContentHeaderRow #logo-coop p {
+.ContentHeaderRow #logo-coop p, .ContentHeaderRow #logo-coop b {
   text-transform: uppercase;
-  font-size: 1.4em;
   text-align: center;
   color: #C3A575;
   background-color: transparent;
@@ -178,9 +185,8 @@ nav {
   max-width: 100%;
 }
 
-.ContentHeaderRow #logo-install p {
+.ContentHeaderRow #logo-install p, .ContentHeaderRow #logo-install b {
   text-transform: uppercase;
-  font-size: 1.4em;
   text-align: center;
   color: #B3D143;
   background-color: transparent;
@@ -190,9 +196,8 @@ nav {
   max-width: 100%;
 }
 
-.ContentHeaderRow #logo-produc p {
+.ContentHeaderRow #logo-produc p, .ContentHeaderRow #logo-produc b {
   text-transform: uppercase;
-  font-size: 1.4em;
   text-align: center;
   color: #FCB731;
   background-color: transparent;
@@ -204,7 +209,6 @@ nav {
 
 .ContentHeaderRow #logo-capital p, .ContentHeaderRow #logo-capital b {
   text-transform: uppercase;
-  font-size: 1.4em;
   text-align: center;
   color: #00AFEC;
   background-color: transparent;
@@ -226,12 +230,312 @@ nav {
   margin: 20px;
 }
 
+.ContentMainSection1Row, .ContentMainSection2Row {
+  background-image: url("../../Christophe/2020_enercol-main/img/points.svg");
+  background-repeat: repeat;
+}
+
+.ContentMainSection1Row .ContentMainSection1Row-left h2, .ContentMainSection1Row .ContentMainSection2Row-left h2, .ContentMainSection2Row .ContentMainSection1Row-left h2, .ContentMainSection2Row .ContentMainSection2Row-left h2 {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.2em;
+  color: grey;
+  background-color: transparent;
+}
+
+.ContentMainSection1Row .ContentMainSection1Row-right p, .ContentMainSection1Row .ContentMainSection2Row-right p, .ContentMainSection2Row .ContentMainSection1Row-right p, .ContentMainSection2Row .ContentMainSection2Row-right p {
+  margin: 10px;
+  font-size: 1em;
+  text-align: left;
+}
+
+.ContentMainSection1Row .ContentMainSection1Row-right img, .ContentMainSection1Row .ContentMainSection2Row-right img, .ContentMainSection2Row .ContentMainSection1Row-right img, .ContentMainSection2Row .ContentMainSection2Row-right img {
+  float: right;
+  background-color: grey;
+  margin: 10px;
+}
+
+.ContentMainSection1Row-right-list {
+  -webkit-padding-start: 40px;
+          padding-inline-start: 40px;
+  list-style-type: disc;
+}
+
+.btn-ContentMainSection1, .btn-MainBottomSection {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: auto;
+  width: 90%;
+  max-width: 100%;
+  border-radius: 10px;
+  border: transparent solid 1px;
+  color: white;
+  background-color: #6D6F71;
+  text-align: center;
+}
+
+.btn-ContentMainSection1 a, .btn-MainBottomSection a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  color: white;
+}
+
+.btn-ContentMainSection2 {
+  border-radius: 10px;
+  border: transparent solid 1px;
+  color: black;
+  background-color: #FCB731;
+  text-align: center;
+  padding: 5px;
+}
+
+.btn-ContentMainSection2 a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+  align-items: center;
+  color: black;
+}
+
+.MainBottomArticle1, .MainBottomArticle2, .MainBottomArticle3, .MainBottomArticle4 {
+  padding: 5px;
+}
+
+.MainBottomArticle1 h2, .MainBottomArticle2 h2, .MainBottomArticle3 h2, .MainBottomArticle4 h2 {
+  text-transform: uppercase;
+}
+
+.MainBottomArticle-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.MainBottomArticle3-content1 div, .MainBottomArticle3-content2 div, .MainBottomArticle3-content3 div, .MainBottomArticle3-content4 div {
+  margin: 10px;
+}
+
+.MainBottomArticle3-content1 div div, .MainBottomArticle3-content2 div div, .MainBottomArticle3-content3 div div, .MainBottomArticle3-content4 div div {
+  height: 60px;
+}
+
+.MainBottomArticle3-content1 div div img, .MainBottomArticle3-content2 div div img, .MainBottomArticle3-content3 div div img, .MainBottomArticle3-content4 div div img {
+  background-color: grey;
+  margin: 10px;
+  float: left;
+  width: auto;
+}
+
+.MainBottomArticle3-content1 img, .MainBottomArticle3-content2 img, .MainBottomArticle3-content3 img, .MainBottomArticle3-content4 img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.MainBottomArticle1 {
+  color: white;
+  background-color: #FCB731;
+}
+
+.MainBottomArticle2 {
+  color: grey;
+  background-color: #B3D143;
+}
+
+.MainBottomArticle3 {
+  color: black;
+  background-image: url("../../Christophe/2020_enercol-main/img/points.svg");
+  background-repeat: repeat;
+}
+
+.MainBottomArticle4 {
+  color: grey;
+  background-color: #E8DDCA;
+}
+
 /***********************************/
 /*             TABLETTE            */
 /***********************************/
 /***********************************/
 /*             DESKTOP             */
 /***********************************/
+@media screen and (min-width: 970px) {
+  .ContentHeadCol, .ContentHeaderRow, .btn-ContentMainSection1, #mainBottomSection {
+    margin: auto;
+    width: 60%;
+    max-width: 100%;
+  }
+  header {
+    background-color: transparent;
+  }
+  nav {
+    left: 20%;
+    right: 20%;
+    top: -10px;
+    position: absolute;
+    width: 60%;
+    height: auto;
+  }
+  header #bckgrnd {
+    height: 325px;
+  }
+  .headerLogo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center;
+    color: black;
+    background-color: white;
+  }
+  .headerLogo #Nom-Entr1 {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  .headerLogo img {
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  .headerLogo #Nom-Entr2 {
+    -ms-flex-order: 3;
+        order: 3;
+  }
+  .contentMenu, .MenuNav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .contentMenu ul:nth-child(1) li, .MenuNav ul:nth-child(1) li {
+    color: black;
+    background-color: #B5D244;
+  }
+  .contentMenu ul:nth-child(1) li a, .MenuNav ul:nth-child(1) li a {
+    padding: 5px 8px;
+    color: black;
+    background-color: #B5D244;
+  }
+  .contentMenu ul:nth-child(2), .MenuNav ul:nth-child(2) {
+    padding-left: 5px;
+  }
+  .contentMenu ul:nth-child(2) li, .MenuNav ul:nth-child(2) li {
+    color: black;
+    background-color: #FBB730;
+  }
+  .contentMenu ul:nth-child(2) li a, .MenuNav ul:nth-child(2) li a {
+    padding: 5px 8px;
+    color: black;
+    background-color: #FBB730;
+  }
+  .contentMenuLogo {
+    display: none;
+  }
+}
+
+.ContentHeaderRow {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.ContentMainSection1Row, .ContentMainSection2Row {
+  background-image: none;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.ContentMainSection1Row .ContentMainSection1Row-left, .ContentMainSection1Row .ContentMainSection2Row-left, .ContentMainSection2Row .ContentMainSection1Row-left, .ContentMainSection2Row .ContentMainSection2Row-left {
+  background-image: url(../../Christophe/2020_enercol-main/img/points.svg);
+  background-repeat: repeat;
+  width: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.ContentMainSection1Row .ContentMainSection1Row-left h2, .ContentMainSection1Row .ContentMainSection2Row-left h2, .ContentMainSection2Row .ContentMainSection1Row-left h2, .ContentMainSection2Row .ContentMainSection2Row-left h2 {
+  width: 40%;
+  text-align: right;
+}
+
+.ContentMainSection1Row .ContentMainSection1Row-right p, .ContentMainSection1Row .ContentMainSection2Row-right p, .ContentMainSection2Row .ContentMainSection1Row-right p, .ContentMainSection2Row .ContentMainSection2Row-right p {
+  text-align: left;
+  width: 60%;
+}
+
+.btn-ContentMainSection1 {
+  width: 335px;
+}
+
+.btn-ContentMainSection1 b a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 /***********************************/
 /*               TV                */
 /***********************************/
